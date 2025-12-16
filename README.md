@@ -37,7 +37,7 @@ cd seq2seq_translation
 ```powershell
 python -m venv venv
 .\\venv\\Scripts\\Activate.ps1
-pip install -r requirements.txt  # 如果项目没有 requirements.txt，请至少安装 torch, tqdm, numpy
+pip install -r requirements.txt 
 ```
 
 3. 数据预处理（若需要）：
@@ -51,8 +51,7 @@ python preprocess.py
 4. 训练（示例）
 
 ```powershell
-python train_seq2seq.py --config configs/your_config.json
-# 或运行没有配置文件的默认训练脚本
+python train_seq2seq.py 
 ```
 
 5. 测试 / 推理（示例）
@@ -60,46 +59,6 @@ python train_seq2seq.py --config configs/your_config.json
 ```powershell
 python test_seq2seq.py --model best_model_attention_2.pt --beam 5
 ```
-
-> 注：实际的脚本参数视 `train_v2.0` 中各脚本实现而定，请查看对应脚本顶部的帮助信息或 `--help`。
-
----
-
-## 模型与大文件说明 📦
-- 项目中存在以 `.pt` 为后缀的模型权重文件（示例：`best_model_attention_2.pt`、`tut1-model.pt`），这些通常较大，建议使用 Git LFS 来管理：
-
-```powershell
-git lfs install
-git lfs track "*.pt"
-```
-
-- 对于非常大的模型或数据，优先考虑放到 Releases、外部存储或仅提供下载链接。
-
----
-
-## 推荐的 .gitignore 示例
-
-```
-# Python
-__pycache__/
-*.py[cod]
-
-# env
-venv/
-.env
-
-# IDE
-.vscode/
-.idea/
-
-# data / models
-*.pt
-preprocessed_attention_data/
-```
-
-（如果使用 Git LFS 管理 `.pt` 文件，可将 `*.pt` 从忽略列表移除）
-
----
 
 ## 依赖（示例）
 - Python 3.8+
@@ -111,11 +70,6 @@ preprocessed_attention_data/
 ---
 
 ## 贡献与联系 🤝
-欢迎提交 Issue 或 Pull Request。请在 PR 中描述你的更改与复现步骤。
-
----
-
-## 许可 & 引用
-请在项目中添加合适的 `LICENSE`（例如 MIT 或 Apache-2.0），并在学术用途时引用本仓库实现说明。
+欢迎提交 Issue 或 Pull Request。
 
 ---
