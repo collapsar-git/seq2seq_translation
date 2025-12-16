@@ -1,0 +1,8 @@
+# Minimal dependencies for seq2seq_translation (adjust versions as needed)
+python>=3.8
+torch>=1.9.0
+matplotlib
+tqdm
+
+# Optional but commonly useful
+numpy

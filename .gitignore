@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# virtual environments
+venv/
+.env
+
+# IDEs
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data directories
+preprocessed_attention_data/
+
+# Models: track with Git LFS (do NOT ignore .pt if you want LFS to handle them)
+# If you prefer not to use LFS, uncomment the next line to ignore .pt files:
+# *.pt
+
+# OS
+.DS_Store
+Thumbs.db

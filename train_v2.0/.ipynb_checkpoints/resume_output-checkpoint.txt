@@ -1,0 +1,39 @@
+(nlp) root@autodl-container-c8da1195fa-f56f2ed7:~/train_v3.0# python train_seq2seq_resume.py
+Starting resume training...
+Loading checkpoint: best_model_attention_2.pt
+Epoch: 01 | Time: 16m 43s                                                                                                                                      
+        Train Loss: 3.895 | PPL: 49.179
+         Val. Loss: 4.892 | PPL: 133.185
+Epoch: 02 | Time: 16m 41s                                                                                                                                      
+        Train Loss: 3.908 | PPL: 49.824
+         Val. Loss: 4.873 | PPL: 130.748
+Epoch: 03 | Time: 16m 39s                                                                                                                                      
+        Train Loss: 3.937 | PPL: 51.245
+         Val. Loss: 4.875 | PPL: 130.946
+Epoch: 04 | Time: 16m 40s                                                                                                                                      
+        Train Loss: 3.969 | PPL: 52.912
+         Val. Loss: 4.833 | PPL: 125.546
+Epoch: 05 | Time: 16m 39s                                                                                                                                      
+        Train Loss: 4.005 | PPL: 54.884
+         Val. Loss: 4.808 | PPL: 122.454                   
+ Epoch: 06 | Time: 16m 45s                                                                                                                                                    
+        Train Loss: 4.029 | PPL: 56.214
+         Val. Loss: 4.784 | PPL: 119.624
+Epoch: 07 | Time: 16m 45s                                                                                                                                                    
+        Train Loss: 4.063 | PPL: 58.142
+         Val. Loss: 4.767 | PPL: 117.583
+Epoch: 08 | Time: 16m 41s                                                                                                                                                    
+        Train Loss: 4.089 | PPL: 59.698
+         Val. Loss: 4.757 | PPL: 116.367
+Epoch: 09 | Time: 16m 3s                                                                                                                                                     
+        Train Loss: 4.116 | PPL: 61.319
+         Val. Loss: 4.726 | PPL: 112.897
+Epoch: 10 | Time: 16m 5s                                                                                                                                                           
+        Train Loss: 4.110 | PPL: 60.965
+         Val. Loss: 4.722 | PPL: 112.355
+Plotting training curves...
+\nTranslation Test:
+what is your name -> 你的名字是什么？？
+how are you -> 你们怎么么
+i love deep learning -> 我爱深深深习习
+sequence to sequence learning with neural networks -> 序序学习序神经学学序序序序
