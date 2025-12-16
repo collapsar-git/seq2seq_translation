@@ -65,7 +65,7 @@ python test_seq2seq.py --model best_model_attention_2.pt --beam 5
 - PyTorch
 - numpy
 - tqdm
-- 其它依赖请参见子目录的脚本或 `requirements.txt`（如有）
+- 其它依赖请参见子目录的脚本或 `requirements.txt`
 
 ---
 
